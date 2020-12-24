@@ -1,0 +1,174 @@
+<html>
+
+<head>
+      <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <header id="nav-header">
+      HTML & CSS Guide
+    </header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">
+          Introduction
+        </a></li>
+      <li><a class="nav-link" href="#About_HTML">
+          About HTML
+        </a></li>
+      <li><a class="nav-link" href="#Adding_an_image">
+          Adding an image
+        </a></li>
+      <li><a class="nav-link" href="#About_CSS">
+          About CSS
+        </a></li>
+      <li><a class="nav-link" href="#Choosing_a_color">
+          Choosing a color
+        </a></li>
+      <li><a class="nav-link" href="#Adding_animation">
+          Adding animation
+        </a></li>
+      <li><a class="nav-link" href="#About_JS">
+          About JS
+        </a></li>
+      <li><a class="nav-link" href="#Let_vs._Var_Variables">
+          Let vs. Var Variables
+        </a></li>
+    </ul>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>
+        <h2>Introduction</h2>
+      </header>
+      <p>I'm building this as a quick reference on HTML/CSS/JS for myself to remind me how to implement certain components. I started off writing my notes in a notebook so I can translate some of that onto here! This will also be a good refresher on such concepts.</p>
+      <p>I always think of this guide:</p>
+      <img src="https://miro.medium.com/max/640/0*pwix0rJ1u68re144.jpg" alt="Diagram">
+    </section>
+    <section class="main-section" id="About_HTML">
+      <header>
+        <h2>About HTML</h2>
+      </header>
+      <h3>HTML = Hypertext Markup Language</h3>
+      <ul>
+        <li>It's the skeleton of a person! The structure, contents, etc.</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Adding_an_image">
+      <header>
+        <h2>Adding an image</h2>
+      </header>
+      <p>Here's the format:</p>
+      <code>&lt;img src="[link to image]" altsrc="[alternative text]"&gt;</code>
+      <ul>
+        <li>No closing tag</li>
+        <li>altsrc = the text that appears when image doesn't load and what screen readers see</li>
+      </ul>
+    </section>
+    <section class="main-section" id="About_CSS">
+      <header>
+        <h2>About CSS</h2>
+      </header>
+      <h3>CSS = Cascading Style Sheets</h3>
+      <ul>
+        <li>It's the clothes and accessories on a person! The outside appearance, styling, etc.</li>
+        <li>Displays text and other content written in HTML.</li>
+        <li>Case sensitive.</li>
+      </ul>
+      <h3>You can control:</h3>
+      <ul>
+        <li>Color</li>
+        <li>Fonts</li>
+        <li>Positioning</li>
+        <li>Spacing</li>
+        <li>Sizing</li>
+        <li>Decorations</li>
+        <li>Transitions</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Choosing_a_color">
+      <header>
+        <h2>Choosing a color</h2>
+      </header>
+      <p>The fun part! The choice of color can draw attention to content, evoke emotions, or create visual harmony.</p>
+      <h3>Complementary Colors</h3>
+      <ul>
+        <li>Opposite of each other on the color wheel</li>
+      </ul>
+      <h3>Tertiary Colors</h3>
+      <ul>
+        <li>Primary color and one of its secondary color neighbors</li>
+      </ul>
+      <h3>Adjust the Hue of a Color</h3>
+      <code>hsl(___, ___, ___)</code>
+      <ul>
+        <li>Hue: angle of color on the circle (0-360)</li>
+        <li>Saturation: amount of gray (0% - almost completely gray to 100% - fully saturated/normal)</li>
+        <li>Lightness: amount of black or white (0% - black to 50% - normal to 100% - white)</li>
+      </ul>
+      <h3>Adjust the Tone of a Color</h3>
+      <ul>
+        <li>Tone: adding gray / tinting and shading</li>
+        <li>hue + white = tint</li>
+        <li>hue + black = shade</li>
+      </ul>
+      <h3>Create a Gradual CSS Linear Gradient</h3>
+      <code>background: linear-gradient (gradient_direction, color 1, color 2, ...);</code>
+      <ul>
+        <li>Example:</li>
+      </ul>
+      <code>background: linear-gradient (90deg, red, yellow, rgb(204, 204, 255);</code>
+    </section>
+    <section class="main-section" id="Adding_animation">
+      <header>
+        <h2>Adding animation</h2>
+      </header>
+      <p>This is also the fun part! CSS allows animation of HTML elements without using JavaScript or Flash!</p>
+      <code>#anim {<br>
+        animation_name: colorful;<br>
+        animation_duration: 3s;<br>
+        }
+      </code>
+      <p>Next, we need to specify some keyframes for the animation. Keyframes hold what styles the element will have at certain times.</p>
+      <code> @keyframes colorful {<br>
+        0% { // start of animation<br>
+        background-color: blue;<br>
+        }<br>
+        100% { //end of animation<br>
+        background-color: yellow;<br>
+        }<br>
+        }<br>
+      </code>
+
+    </section>
+    <section class="main-section" id="About_JS">
+      <header>
+        <h2>About JS</h2>
+      </header>
+      <h3>JS = JavaScript</h3>
+      <ul>
+        <li>It's the functionality of a person! The muscles, organs, etc.</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Let_vs._Var_Variables">
+      <header>
+        <h2>Let vs. Var Variables</h2>
+      </header>
+      <h3>Let</h3>
+      <ul>
+        <li>block scoped</li>
+        <li>can only be accessed within the block it was declared</li>
+        </ul>
+  <h3>Var</h3>
+      <ul>
+        <li>function scoped</li>
+        <li>can be accessed globally, even if declared within a block</li>
+        </ul>
+    </section>
+
+  </main>
+
+</body>
+
+</html>
